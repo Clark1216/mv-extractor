@@ -7,10 +7,17 @@ echo "Installing module into: $INSTALL_DIR"
 
 # Install build tools
 apt-get update -qq --fix-missing && \
-apt-get upgrade -y && \
+apt-get upgrade -y \
+
+echo "wget and unzip package being installed"
+
 apt-get install -y \
     wget \
-    unzip \
+    unzip
+
+echo "wget and unzip package installed"
+
+apt-get install -y \
     build-essential \
     cmake \
     git \
